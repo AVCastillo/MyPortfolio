@@ -1,0 +1,533 @@
+@media only screen and (max-width:450px) and (max-height:950px){
+html, body {
+    /* overflow-x: hidden; */
+}
+
+
+
+
+section{
+    width: 100vw;
+}
+    
+.nav-links{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    
+
+}
+
+.ham-icon{
+    display: flex;
+    color: white;
+}
+.sidenav{
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+#home{
+    padding-top: 10vh;
+    height: 80vh;
+}
+
+.home-container{
+
+    max-height: 500px;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-top: -12vh;
+    /* background-color: aqua; */
+}
+
+
+.profile-pic-container{
+    height: 200px;
+    width: 200px;
+   
+
+}
+.profile-pic-container img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+
+.greetings{
+    /* background-color: aqua; */
+    width: 300px;
+    /* height: 80px; */
+    
+    
+}
+
+
+.greetings .greetings-p1{
+    margin-top: -150px;
+    font-size: 12px;
+}
+
+.greetings .greetings-name{
+    font-size: 20px;
+}
+
+.greetings .greetings-p2{
+    font-size: 17px;
+}
+
+
+.button-greetings-container{
+    display: none;
+}
+
+.button-greetings-container-mobile{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.download-cv-mobile{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 6px 12px;   
+    font-size: 12px; 
+    border: 1px transparent;
+    
+}
+
+
+.contact-info-mobile{
+    display: flex;
+    gap: 0.5rem;
+    padding: 6px 12px;   
+    font-size: 13px;    
+    border-radius: 20px; 
+    background-color: black;
+    border: 1px transparent;
+    color: white;
+
+    
+ }
+
+ #about{
+    padding-top: 0;
+    height: 50vh;
+}
+
+ .about-image{
+    display: none;
+ }
+ .about-me{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 50vh;
+ }
+
+ .about-me .content-container{
+    
+    /* background-color: green; */
+  
+   
+ }
+
+ .about-me .content-container p{
+    text-align: start;
+    font-size: 12px;
+   
+ }
+
+
+ #experience{
+    padding-top: 0;
+ }
+ .expi-section-container{
+    height: 250vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    /* background-color: #111; */
+ }
+
+.expi-edu-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    margin-top: -20vh;
+}
+
+.expi-edu{
+    /* background-color: green; */
+    width: 100%;
+    /* margin-bottom: 2rem; */
+}
+
+.expi{
+    /* background-color: yellow; */
+    height: 250px;
+}
+
+.expi-header{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.expi  .tech-logo-container{
+    /* background-color: aqua; */
+    height: 5vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left:30px;
+    /* justify-content: center; */
+
+}
+
+.expi .tech-logo{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.tech-logo img{
+    object-fit: cover;
+    height: 28px;
+    width: 28px;
+}
+
+.edu .content{
+    height: 3rem;
+    width: 40%;
+    border: 2px solid transparent;
+    background-color: rgb(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    
+
+}
+
+.content-img-container{
+    margin-top: 7px;
+}
+
+.content-img-container img{
+    height: 25px;
+    width: 35px;
+    /* object-fit: fill; */
+}
+
+#windows-logo{
+    margin-top:-6px;
+    height: 18px;
+    width: 28px;
+}
+
+.projects-title{
+    margin-top: 5rem;
+    
+}
+
+.projects-container{
+    height: 110vh;
+    width: 90vw;
+    margin: 0;
+    display: flex;
+    /* justify-content:space-evenly; */
+    /* gap: 0.5rem; */
+
+   
+}
+
+
+.project{
+    width: 46%;
+    height: 200px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    
+}
+
+ .project .proj-content{
+    font-size:12px;
+    height: 100%;
+    width: 98%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.5rem;
+    
+    
+}
+.proj-content .proj-header{
+    padding: 0.5rem 0 1rem 0;
+    /* background-color: #111; */
+}
+.proj-tech-label{
+    display: none;
+}
+.proj-content .proj-header{
+    margin: 0;
+    /* background-color: #111; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.proj-content .proj-desc-tech-container{
+    /* background-color: blue; */
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.proj-desc-tech-container .proj-description{
+    font-size: 10px;
+    margin: 0;
+    text-align: left;
+    
+
+}
+
+.proj-desc-tech-container .proj-tech{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+
+.proj-desc-tech-container .proj-tech .proj-tech-label{
+    font-size: 10px;
+}
+.tech-image-row{
+    margin-top: -5rem;
+}
+
+#tech-image-socmed{
+    margin-top: -3rem;
+}
+
+#contact{
+    height: 50vh;
+    width: 100vw;
+    
+}
+.contact-contents{
+    justify-content: space-around;
+}
+
+.contact-contents h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size:2rem ;
+}
+
+
+
+.card-contacts-container{
+    /* border: 2px solid; */
+    margin-top: -10vh;
+    height: 60%;
+    width: 100%;
+    
+}
+
+
+.card-contact{
+    width: 90%;
+    height: 20%;
+    font-size: 12px;
+}
+
+
+
+.card-contact i{
+    font-size: 15px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+/* height ng screen */
+@media only screen and (min-height:800px) and (max-height:1000px){
+    #home{
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-height:800px) and (max-width:400px){
+    #experience{
+        height: 300vh;
+     }
+
+     .projects-title{
+        padding-top: 1rem;
+     }
+
+     .expi-edu{
+        /* background-color: green; */
+     
+        margin-bottom: 4rem;
+    }
+}
+
+
+
+@media only screen and (max-width:360px){
+    
+    #about{
+        padding-top: 0;
+        height: 70vh;
+    }
+    
+    .project{
+        width: 48%;
+        height: 200px;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 0.5rem;
+        
+    }
+    .expi-edu-container{
+        margin-top: 7vh;
+    }
+
+    .contact-contents h1{
+        margin-bottom: 2rem;
+    }
+
+    
+}
+
+@media only screen and (min-width:375px)and (max-width:389px){
+    .expi-edu-container{
+        margin-top: 10vh;
+    }
+
+    .contact-contents h1{
+        margin-bottom: 2rem;
+    }
+
+   
+   
+
+}
+
+
+@media only screen and (min-width: 1920px){
+
+    #home{
+        height: 90vh;
+    }
+
+    .edu{
+        width: 90%;
+        height: auto;
+    }
+    .expi{
+        width: 90%;
+    }
+
+    .expi .tech-logo-container{
+        height: 70px;
+        width: 20vw;
+        padding-top: 40px;
+        margin: auto;
+        
+       
+    }
+
+    .profile-pic-container{
+        height: 500px;
+        width: 500px;
+
+        
+
+    }
+
+    .greetings-name{
+        font-size: 3.5rem;
+
+    }
+    
+    .greetings-p2{
+        font-size: 2.25rem;
+
+    }
+
+    .content-container p{
+
+        font-size: 1.65rem;
+    }
+       
+    .project .proj-description{
+
+        margin: 3rem 1rem  0rem 1.5rem;
+        text-align: left;
+    }
+    
+
+}

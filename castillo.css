@@ -1,0 +1,746 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.ham-icon{
+    display: none;
+}
+.sidenav{
+    display: none;
+}
+  
+.navbar, .nav-links{
+    display: flex;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    flex: 1;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 8vh;
+    padding-bottom: 10px;
+    background: #282a39;
+    
+   
+}
+
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    /* font-size: 20px; */
+}
+
+.nav-links li a{
+    position: relative;
+    width: max-content;
+
+}
+
+.nav-links li a:hover{
+    background-color: rgb(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+
+.nav-links li a:after{
+    content: "";
+    background: gray;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 200ms;
+   
+}
+
+
+
+.nav-links li a.active::after {
+    width: 100%; 
+}
+
+
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+
+/*
+sections
+*/
+
+section{
+
+  
+    
+}
+
+/* Home */
+#home{
+    padding-top: 10vh;
+    height: 90vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: #282a39;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.home-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+
+}
+
+.profile-pic-container{
+    height: 400px;
+    width: 400px;
+    /* background-color: aqua; */
+    /* position: relative; */
+    /* z-index: 0; */
+   
+
+}
+
+.profile-pic-container img {
+    /* position: absolute; */
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    object-fit: cover;
+    /* z-index: 1; */
+    
+
+}
+
+/* @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+} */
+/* .profile-pic-container::after,.profile-pic-container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(transparent 80%,white);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    z-index: -1;
+    padding: 4px;
+    transform: rotate(0deg);
+    animation: spin 6s linear infinite;
+    
+
+}
+
+.profile-pic-container::after{
+    animation-delay: -3s;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+/* .profile-pic-container::before{
+    filter: blur(1.5rem);
+    z-index: -1;
+} */
+
+
+.greetings{
+    padding-top: 80px;
+    text-align: center;
+    
+   
+}
+
+
+.greetings p{
+    font-weight: 600;
+    color: rgb(150, 150, 150);
+}
+
+.greetings-p1{
+    text-align: center;
+}
+.greetings-name{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.greetings-p2{
+    font-size: 1.75rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.button-greetings-container{
+    display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  border-radius: 2rem;
+  
+  
+}
+
+
+.download-cv,
+.contact-info {
+  border: black 0.1rem solid;
+ 
+}
+
+.button-greetings-container-mobile{
+    display: none;
+}
+
+
+.download-cv:hover{
+    color: white;
+}
+
+
+.download-cv:hover,
+.contact-info:hover{
+  border: rgb(150, 150, 150) 0.1rem solid;
+  cursor: pointer;
+  background-color: #282a39;
+}
+
+.contact-info{
+    background-color: black;
+    color: white;
+}
+.download-cv{
+    background-color: white;
+}
+
+
+/* ABOUT ME SECTION*/
+
+#about{
+    padding-top: 10vh;
+    height: 90vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: white;
+}
+
+.about-container{
+    display: flex;
+    height: 75vh;
+    width:80vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+   
+   
+}
+
+.about-me{
+    height: 75vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image{
+    height: 75vh;
+    width: 30vw;
+    padding-top: 10px;
+}
+
+.about-image img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-container{
+   align-items: center;
+}
+
+.content-container h1{
+    font-weight:bolder;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #282a39;
+    
+}
+
+
+.content-container p{
+    font-family: "Karla", sans-serif;
+    font-size: 1.15rem;
+    padding-bottom: 1rem;
+    color: #282a39;
+    font-weight: 500;
+}
+
+
+
+
+
+/* Experience section*/
+
+#experience{
+    padding-top: 15vh;
+    height: 180vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: #282a39;
+}
+
+.expi-section-container{
+    height: 149vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+
+.expi-edu-container{
+    height: 40vh;
+    width: 75vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+
+/* container ng edu at expi */
+.expi-edu{
+    height: 40vh;
+    width: 45.7%;
+    display: inline-block;
+
+    
+    
+
+
+}
+
+/* actual card for expi */
+.expi{
+    height: 32vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    font-family: "Karla", sans-serif;
+    border-radius: 20px;
+    
+
+    
+}
+
+.expi-header{
+    padding: 1.8rem 1.5rem  0rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.expi-header .work-company-name{
+    color:rgb(187, 185, 185);
+    
+}
+
+.expi-header .work-date{
+    color:rgb(187, 185, 185);
+    font-style: italic;
+}
+.expi .work-job{
+    text-align:start;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    color: white;
+}
+
+.expi .work-description{
+    color:rgb(187, 185, 185);
+    text-align: left;
+    padding: 1.5rem 1.5rem  0rem 1.5rem;
+
+}
+
+.expi-edu h2{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.expi .tech-logo-container{
+    height: 70px;
+    width: 20vw;
+    padding-top: 20px;
+    margin: auto;
+    
+   
+}
+
+.expi .tech-logo{
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    
+}
+
+.tech-logo img{
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+/* actual card for edu */
+.edu{
+    height: 35vh;
+    width: 100%;
+    border-color: white;  
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color:rgb(187, 185, 185);
+    margin: auto;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+}
+
+
+.edu .content{
+    height: 3rem;
+    width: 25%;
+    border: 2px solid transparent;
+    background-color: rgb(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    
+
+}
+
+.edu .content:hover{
+    border-color: white;
+    
+}
+
+
+#c-logo{
+    margin-left: -11px;
+}
+
+#windows-logo{
+    height: 25px;
+    width: 35px;
+}
+
+.edu .content-img-container{
+    height: 80%;
+    width: 30%;
+    /* border: 2px solid; */
+   
+}
+
+.content-img-container img{
+    height: 30px;
+    width: 40px;
+    /* object-fit: fill; */
+}
+
+
+
+
+.projects-title{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects-container{
+    height: 140vh;
+    width: 75vw;
+    /* border: 2px solid;
+    border-color: white ; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 25px; */
+    
+    
+}
+
+.project{
+    height: 35%;
+    width: 30%;
+    position: initial;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+}
+
+.proj .proj-content{
+    display: flex;
+    justify-content: left;
+
+}
+.project .proj-header{
+
+    margin: 1.5rem 1.5rem  0rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.project .proj-date{
+    font-style: italic;
+    color:rgb(187, 185, 185);
+}
+
+.project p{
+    font-size: 14px;
+    
+    color:rgb(187, 185, 185);
+}
+
+.proj-desc-tech-container .proj-tech .proj-tech-label{
+    color: white;
+}
+
+.project .proj-desc-tech-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    /* border: 2px solid; */
+    height: 25vh;
+    width: 22vw;
+}
+
+
+.project .proj-description{
+
+    margin: 1rem 1rem  0rem 1.5rem;
+    text-align: left;
+}
+
+.project .proj-tech{
+    text-align: left;
+    margin: 0rem 1rem  0rem 1.5rem;
+    color:rgb(187, 185, 185);
+    display: flex;
+    align-self:self-start;
+    justify-content: space-evenly;
+   
+  
+}
+
+.proj-tech .proj-tech-label{
+
+}
+
+.proj-tech .tech-image-row{
+    margin-left: 10px ;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.proj-tech .tech-image-row img{
+    height: 25px;
+    width: 25px;
+}
+
+.tech-java-logo{
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.tech-mongo-logo{
+    margin-left: -6px;
+    /* padding-left: -5px; */
+}
+
+.tech-react-logo{
+    margin-right: 2px;
+}
+
+.proj-tech .tech-image-row .tech-dart-logo{
+    margin-top: -2px;
+    margin-right: 2px;
+    height: 25px;
+    width: 45px;
+}
+
+.proj-tech .tech-image-row .tech-flutter-logo{
+    margin-top: -2px;
+    height: 25px;
+    width: 45px;
+}
+
+.project:hover{
+    border-color:rgb(187, 185, 185);
+
+}
+
+.expi:hover{
+    border-color:white;
+}
+
+
+
+
+/* Contacts Section */
+
+#contact{
+    /* padding-top: 10vh; */
+    height: 50vh;
+    width: 100vw;
+    margin: auto;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: white;
+}
+
+
+.contact-contents{
+    height: 100%;
+    width: 80%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contact-contents h1{
+    margin-top: -2vh;
+    margin-bottom: 5vh;
+    font-weight:bolder;
+    font-size: 2.5rem;
+    color: #282a39;
+}
+
+
+.card-contacts-container{
+    height: 45%;
+    width: 90%;
+    /* border: 2px solid; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+   
+
+}
+
+.card-contact{
+    width: 35%;
+    height: 40%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 15px;
+    margin-bottom: 0;
+    /* background-color: black */
+  
+}
+
+.card-contact:hover{
+    color: white;
+    background-color: #282a39;
+    transition: 0.5s;
+    border-color: #282a39;
+}
+
+.card-contact .contact-content{
+    /* color: white; */
+    width: 80%;
+}
+
+
+.contact-content h4{
+    cursor: pointer;
+}
+
+.card-contact i{
+    font-size: 30px;
+    margin-left: 2rem;
+    /* color: white; */
+}
+
+
